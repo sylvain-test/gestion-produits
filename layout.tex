@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+
+% Importation des packages utiles
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+
+% Configuration de la mise en page
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% Configuration de l'en-tête et du pied de page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Projet Spring Boot - Inventory Management}}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\today}
+
+% Style des sections
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+% Couverture
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+    {\Huge \textbf{Projet Spring Boot - Inventory Management} \par}
+    \vspace{1cm}
+    {\Large Sylvain Wanja Njangang \par}
+    \vfill
+    {\large Généré le \today}
+\end{titlepage}
+
+% Table des matières
+\tableofcontents
+\newpage
+
+% Début du contenu
